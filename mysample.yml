@@ -1,0 +1,15 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: i want to install nginx webserver on ansible nodes
+    apt:
+     name: nginx
+     state: present
+
+
+  - name: i want to start webserver
+    service:
+      name: nginx
+      state: started   
+
