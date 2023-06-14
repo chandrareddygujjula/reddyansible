@@ -1,5 +1,5 @@
 ---
-- hots: all
+- hosts: all
   become: yes
   tasks:
   - name: install webserver on ubuntu ansible nodes
