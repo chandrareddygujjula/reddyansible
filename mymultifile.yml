@@ -7,3 +7,8 @@
       name: git
       state: present
 
+  - name: i want to install wget
+    apt:
+      name: wget
+      state: present    
+
